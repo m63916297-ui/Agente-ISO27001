@@ -328,7 +328,7 @@ class AgenteRiesgo(AgenteBase):
             descripcion=f"Aplicar tratamiento: {tratamiento}",
             agente_responsable=self.tipo,
             prioridad=Prioridad.ALTA,
-            tags=["riesgo", riesgo_id, tratamiento],
+            tags=["riesgo", riesgo_id, str(tratamiento)],
         )
 
         self.agregar_tarea(tarea)
